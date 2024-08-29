@@ -23,13 +23,12 @@ module.exports = usuario = (sequelize) => {
             type: DataTypes.STRING,
             allowNull: false
         },
-        TipoUsuario: {
-            type: DataTypes.STRING,
-            allowNull: true
+        Vendedor: {
+            type: DataTypes.BOOLEAN,
         },
         Admin: {
             type: DataTypes.BOOLEAN,
-            
+
         }
     });
 }
