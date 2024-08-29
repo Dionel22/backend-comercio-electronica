@@ -1,6 +1,6 @@
 const { DataTypes } = require("sequelize");
 
-module.exports = usuario = (sequelize) => {
+module.exports = usuarioModel = (sequelize) => {
     sequelize.define("Usuario",{
         Id: {
             type: DataTypes.INTEGER,
@@ -25,10 +25,11 @@ module.exports = usuario = (sequelize) => {
         },
         Vendedor: {
             type: DataTypes.BOOLEAN,
+            defaultValue: false
         },
         Admin: {
             type: DataTypes.BOOLEAN,
-
+            defaultValue: false
         }
     });
 }
