@@ -1,18 +1,16 @@
-const { getAsync, postAsync } = require("../../Controllers/ControllerUsuario/controllerUsuario");
 
-const get = async (req, res) => {
+const getAsync = async (req, res) => {
     try {
-        const response = await getAsync();
+        //const response = await ()=>{};
         return res.status(200).json(response)
     } catch (error) {
         console.log("error", error.message);
         return res.status(400).json({error: error.message})
     }
 }
-const post = async (req, res) => {
-        const { id } = req.body;
+const postAsync = async (req, res) => {
     try {
-        const response = await postAsync(id);
+        //const response = await ()=>{};
         return res.status(200).json(response)
     } catch (error) {
         console.log("error", error.message);
@@ -21,6 +19,6 @@ const post = async (req, res) => {
 }
 
 module.exports = {
-    get,
-    post
+    getAsync,
+    postAsync
 }
