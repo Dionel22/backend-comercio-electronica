@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const { get, post } = require("@/Handlers/HandlerUsuario/handlerUsuario")
+const { get, post } = require("@/Handlers/HandlerUsuario/handlerUsuario");
 
 const routerUsuario = Router();
 
